@@ -1,0 +1,378 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MstPg_Veena.master.cs"
+    Inherits="DESPLWEB.MstPg_Veena" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Durocrete</title>
+    <link rel="SHORTCUT ICON" href="Images/Duro.png" type="image/x-icon">
+    <link href="App_Themes/duro/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function disableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+    </script>
+</head>
+<body onkeydown="return (event.keyCode!=13)">
+    <%-- onload = "disableBackButton()" >--%>
+    <form id="form1" runat="server">
+        <div class="center">
+            <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+            </asp:ToolkitScriptManager>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/DuroLogo.bmp" />
+                    </td>
+                    <td align="right">
+                        <div id="Logout">
+                            <asp:Label ID="lblUsername" runat="server" Text="" Font-Bold="True" Font-Names="Arial"
+                                Font-Size="Medium" ForeColor="#CC3300"></asp:Label>
+                            &nbsp; &nbsp;
+                        <asp:Label ID="lblCurrentDate" runat="server" Text="Label" Font-Bold="True" Font-Names="Arial"
+                            Font-Size="Small" ForeColor="#000099"></asp:Label>
+                            <input id="BtnLogout" runat="server" class="btnColor" onserverclick="BtnLogout_Click"
+                                type="button" value="Logout" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <div id='cssmenu'>
+                            <ul>
+                                <li class='active has-sub'><a href='#'><span>Master</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='#'><span>Client Setting</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='Client.aspx'><span>Client Update </span></a></li>
+                                               <li class='has-sub'><a href='ClientSiteStatus.aspx'><span>Client Status</span></a></li>
+                                                <li class='has-sub'><a href='ClientNameUpdate.aspx'><span>Client Name Update</span></a></li>
+                                                <li class='has-sub'><a href='ClientList.aspx'><span>Client List</span></a></li>
+                                                <li class='has-sub'><a href='ClientRecoveryUser.aspx'><span>Recovery User</span></a></li>
+                                                <li class='has-sub'><a href='ClientCRLimit_new.aspx'><span>CR Limit Bypass </span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='#'><span>Site Setting</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='Site.aspx'><span>Site Update </span></a></li>
+                                                <li class='has-sub'><a href='ClientCRLimit.aspx'><span>Site Setting</span></a></li>
+                                                 <li class='has-sub'><a href='SiteAllocation.aspx'><span>Site Allocation</span></a></li>
+                                                <li class='has-sub'><a href='SiteList.aspx'><span>Site List</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='#'><span>Route Setting</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='Route.aspx'><span>Route</span></a> </li>
+                                                <li class='has-sub'><a href='RouteMEAllocation.aspx'><span>Route-ME Allocation</span></a></li>
+                                                <li class='has-sub'><a href='RouteDriverAllocation.aspx'><span>Route-Driver Allocation</span></a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='TestWiseNablScope.aspx'><span>Testwise Nabl Scope</span></a> </li>
+                                        <li class='has-sub'><a href='AlertMapping.aspx'><span>Trigger Setting</span></a></li>
+                                        <li class='has-sub'><a href='SectionWiseEmail.aspx'><span>SectionWise Email</span></a></li>
+                                        <li class='has-sub'><a href='UserAccessRight.aspx'><span>User</span></a> </li>
+                                        <%-- <li class='has-sub'><a href='DiscountSetting.aspx'><span>Discount</span></a> </li>--%>
+                                        <li class='has-sub'><a href='DiscountList.aspx'><span>Discount List</span></a> </li>
+                                        <li class='has-sub'><a href='ComplaintRegister.aspx'><span>Complaint Register</span></a></li>
+                                        <li class='has-sub'><a href='ComplaintList.aspx'><span>Complaint List</span></a></li>
+                                        <li class='has-sub'><a href='GeneralSettings.aspx'><span>Soil Settings</span></a></li>
+                                        <li class='has-sub'><a href='EquipmentReg.aspx'><span>Equipment Register</span></a></li>
+                                        <li class='has-sub'><a href='Bank.aspx'><span>Bank</span></a></li>
+                                        <li class='has-sub'><a href='Supplier.aspx'><span>Supplier</span></a></li>
+                                        <li class='has-sub'><a href='BackupData.aspx'><span>Backup</span></a></li>
+                                        <li class='has-sub'><a href='GST.aspx'><span>GST Setting</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Enquiry</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='EnquiryProposal.aspx'><span>Enquiry with Proposal</span></a> </li>
+                                      <%--  <li class='has-sub'><a href='Enquiry.aspx'><span>New Enquiry</span></a> </li>--%>
+                                        <li class='has-sub'><a href='EnquiryProposalSiteWise.aspx'><span>New Enquiry-Site Wise</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='EnquiryVerifyClient.aspx'><span>Enquiry-Verify Client</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='EnquiryApproval.aspx'><span>Enquiry Approval</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='Enquiry_Status.aspx'><span>Enquiry Status</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='EnquiryClose.aspx'><span>Close Enquiry </span></a></li>
+                                        <li class='has-sub'><a href='MaterialCollection.aspx'><span>Collection Detail </span>
+                                        </a></li>
+                                        <li class='has-sub'><a href='ProposalList.aspx'><span>Proposal </span></a></li>
+                                        <li class='has-sub'><a href='EnquiryPendingForME.aspx'><span>Pending Enquiry List</span></a></li>
+                                        <li class='has-sub'><a href='NDTAppEnquiryAllocation.aspx'><span>NDT Enquiry Allocation</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>App</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='AppCollectionReport.aspx'><span>App Collection Report</span></a></li>
+                                        <li class='has-sub'><a href='ClientVerify.aspx'><span>App Login Approval</span></a> </li>
+                                        <li class='has-sub'><a href='SiteVerify.aspx'><span>SalesApp Site Approval</span></a> </li>
+                                        <li class='has-sub'><a href='DeviceOrder.aspx'><span>Device Order</span></a> </li>
+                                     <li class='has-sub'><a href='DriverEnquiryAllocation.aspx'><span>Change Driver</span></a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Inward</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='Enquiry_List.aspx'><span>New Inward </span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='AAC_Inward.aspx'><span>AAC Block Testing</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Aggregate_Inward.aspx'><span>Aggregate Testing</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Brick_Inward.aspx'><span>Brick Testing</span></a> </li>
+                                                <li class='active has-sub'><a href='#'><span>Cement</span></a>
+                                                    <ul>
+                                                        <li class='has-sub'><a href='CementChemical_Inward.aspx'><span>Cement Chemical</span></a>
+                                                        </li>
+                                                        <li class='has-sub'><a href='Cement_Inward.aspx'><span>Cement Testing</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class='has-sub'><a href='CoreCutting_Inward.aspx'><span>Core Cutting</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Core_Inward.aspx'><span>Core Testing</span></a> </li>
+                                                <li class='has-sub'><a href='Cube_Inward.aspx'><span>Cube Testing</span></a> </li>
+                                                <li class='has-sub'><a href='Flyash_Inward.aspx'><span>Fly Ash Testing</span></a>
+                                                </li>
+                                                <li class='active has-sub'><a href='#'><span>GGBS</span></a>
+                                                    <ul>
+                                                        <li class='has-sub'><a href='GgbsChemical_Inward.aspx'><span>GGBS Chemical</span></a>
+                                                        </li>
+                                                        <li class='has-sub'><a href='Ggbs_Inward.aspx'><span>GGBS Testing</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class='has-sub'><a href='MixDesign_Inward.aspx'><span>Mix Design</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Solid_Inward.aspx'><span>Masonary Block</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='NDT_Inward.aspx'><span>Non Destructive</span></a> </li>
+                                                <li class='has-sub'><a href='Other_Inward.aspx'><span>Other Testing</span></a> </li>
+                                                <li class='has-sub'><a href='Pavement_Inward.aspx'><span>Pavement Block</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Pile_Inward.aspx'><span>Pile Testing</span></a> </li>
+                                                <li class='has-sub'><a href='RWH_Inward.aspx'><span>RWH</span></a> </li>
+                                                <li class='has-sub'><a href='Soil_Inward.aspx'><span>Soil Testing</span></a> </li>
+                                                <li class='has-sub'><a href='SoilInvestigation_Inward.aspx'><span>Soil Investigation</span></a>
+                                                </li>
+                                                <li class='active has-sub'><a href='#'><span>Steel</span></a>
+                                                    <ul>
+                                                        <li class='has-sub'><a href='STC_Inward.aspx'><span>Steel Chemical</span></a> </li>
+                                                        <li class='has-sub'><a href='Steel_Inward.aspx'><span>Steel Testing</span></a> </li>                                                    
+                                                    </ul>
+                                                </li>
+                                                <li class='has-sub'><a href='Tile_Inward.aspx'><span>Tile Testing</span></a> </li>
+                                                <li class='has-sub'><a href='Water_Inward.aspx'><span>Water Testing</span></a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='InwardStatus.aspx'><span>Inward Status</span></a> </li>
+                                        <li class='has-sub'><a href='InwardTestStartedStatus.aspx'><span>Test Start</span></a> </li>
+                                        <li class='has-sub'><a href='MistakeRegister.aspx'><span>Mistake Register </span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='TestSchdule.aspx'><span>Testing Schedule </span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='Test.aspx'><span>Add New Test</span></a> </li>
+                                    </ul>
+                                </li>
+                                <%--<li class='active1 has-sub'><a href='#'><span>Proforma Invoice</span></a>
+                                <ul>
+                                    <li class='has-sub'><a href='ProformaInvoice.aspx'><span>New Proforma Invoice</span></a> </li>
+                                    <li class='has-sub'><a href='ProformaInvoiceStatus.aspx'><span>Proforma Invoice Status</span></a> </li>
+                                </ul>
+                            </li>--%>
+                                <li class='active has-sub'><a href='#'><span>Bill </span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='Bill.aspx'><span>Bill for Coupons</span></a> </li>
+                                        <li class='has-sub'><a href='BillWithoutInward.aspx'><span>Add Bill W/O Inward</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='BillStatus.aspx'><span>Bill Status</span></a> </li>
+                                        <li class='has-sub'><a href='CouponStatus.aspx'><span>Coupon Status</span></a> </li>
+                                        <li class='has-sub'><a href='MonthlyBilling.aspx'><span>Monthly Billing</span></a></li>
+                                        <%--<li class='has-sub'><a href='BillPrevious.aspx'><span>Add previous Bill</span></a></li>--%>
+                                        <li class='has-sub'><a href='SiteWiseRateList.aspx'><span>Site Wise Rate List</span></a>
+                                        </li>
+                                       <li class='has-sub'><a href='ClientMOUUpload.aspx'><span>Client MOU upload</span></a></li>
+                                        <li class='has-sub'><a href='POUpload.aspx'><span>Upload WO - bill</span></a></li>
+                                        <li class='has-sub'><a href='BillOutward.aspx'><span>Outward</span></a></li>
+                                        <li class='has-sub'><a href='BillPendingReportList.aspx'><span>Bill to be generated</span></a></li>
+                                        <li class='has-sub'><a href='ProformaInvoiceStatus.aspx'><span>Proforma Invoice Status</span></a> </li>
+                                        <%--<li class='has-sub'><a href='BillGenerationForApprovedRpt.aspx'><span>Generated bill for approved reports</span></a></li>--%>
+                                        <li class='has-sub'><a href='RecoveryUpdation.aspx'><span>Recovery Updation</span></a> </li>
+                                        <li class='has-sub'><a href='RecoveryAging.aspx'><span>Recovery Aging Report </span></a></li>
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Account</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='CashReceipt_Entry.aspx'><span>New Cash receipt</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='CashReceipt_Modify.aspx'><span>List of Receipt</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='JournalEntry.aspx'><span>New Journal</span></a> </li>
+                                        <li class='has-sub'><a href='ModifyJournal.aspx'><span>List of Journal</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='AdvanceReciptEntry.aspx'><span>New Advance Receipt</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='AdvanceJournalEntry.aspx'><span>Advance Adjustment </span>
+                                        </a></li>
+                                        <li class='has-sub'><a href='Advance_Modify.aspx'><span>List of Advance</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='OutstandingList.aspx'><span>Bank List</span></a> </li>
+                                        <li class='has-sub'><a href='OutstandingReport.aspx'><span>Outstanding List</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='OutstandingRecoveryReport.aspx'><span>Outstanding Recovery</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='CollectionReport.aspx'><span>Collection report</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='OutstandingAging.aspx'><span>Aging Report </span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='CashBook.aspx'><span>Cash Book </span></a></li>
+                                        <li class='has-sub'><a href='Ledger.aspx'><span>Transfer</span></a>
+                                            <ul>
+                                            <li class='has-sub'><a href='Ledger.aspx'><span>Ledger Master</span></a> </li>
+                                            <li class='has-sub'><a href='TallyTransfer.aspx'><span>Tally transfer</span></a></li>
+                                            <li class='has-sub'><a href='BalanceTransfer.aspx'><span>Balance transfer</span></a></li>
+                                            <li class='has-sub'><a href='BadDebt.aspx'><span>Import Bad Debt</span></a> </li>
+                                            <li class='has-sub'><a href='ClientLedgerMapping.aspx'><span>Client-Ledger Mapping</span></a></li>
+                                            </ul> 
+                                        </li> 
+                                        <li class='has-sub'><a href='Vendor.aspx'><span>Vendor Bill Booking</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='Vendor.aspx'><span>Vendor Master</span></a></li>
+                                                <li class='has-sub'><a href='BillBooking.aspx'><span>Bill Booking</span></a></li>
+                                                <li class='has-sub'><a href='VendorCashPayment.aspx'><span>Cash Payment</span></a></li>
+                                                <li class='has-sub'><a href='BillBooking_Modify.aspx'><span>Bill Booking Status</span></a></li>
+                                                <li class='has-sub'><a href='TallyTransfer_BillBooking.aspx'><span>Tally transfer</span></a></li>
+                                                <li class='has-sub'><a href='BillBooking_Report.aspx'><span>Bill Booking Report</span></a></li>
+                                            </ul>
+                                        </li>
+                                            <li class='has-sub'><a href='CashPayment.aspx'><span>Cash Payment</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='CashPayment.aspx'><span>Cash Payment</span></a></li>
+                                                <li class='has-sub'><a href='CashPayment_Modify.aspx'><span> Payment Status</span></a></li>
+                                            </ul>                                        
+                                            </li>
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Report</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='ReportStatus.aspx'><span>Report Status</span></a> </li>
+                                        <li class='has-sub'><a href='ApproveReport.aspx'><span>Approve Report</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='ReportApproveCRLimit.aspx'><span>CR Limit Approval</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='FollowUp.aspx'><span>Follow Up Register</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='PrintReport.aspx'><span>Print Report</span></a> </li>
+                                        <li class='has-sub'><a href='DisplayReport.aspx'><span>Display Report</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='DispatchSheetMEWise.aspx'><span>Dispatch Sheet</span></a></li>
+                                        <li class='has-sub'><a href='OutwardReport.aspx'><span>Outward Report</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='DuplicateReport.aspx'><span>Duplicate Report</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='#'><span>MF Entry</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='MixDesignSystem.aspx'><span>Mix Design - System</span></a></li>
+                                                <li class='has-sub'><a href='Aggregate_Report.aspx'><span>Sieve Analysis</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='Trial.aspx'><span>Trial Updation</span></a> </li>
+                                                <%--<li class='has-sub'><a href='TrialOtherInfo.aspx'><span>Other Information</span></a></li>--%>
+                                                <li class='has-sub'><a href='Cube_Report.aspx'><span>Trial Cube Strength</span></a>
+                                                </li>
+                                                <li class='has-sub'><a href='MDLetter.aspx'><span>MDL/Final Report</span></a> </li>
+                                                <li class='has-sub'><a href='MixDesignLetter.aspx'><span>MDL/Final Report - New</span></a> </li>
+                                                <li class='has-sub'><a href='MFMaterialUpdation.aspx'><span>Update Material</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='MFStatus.aspx'><span>MF Status</span></a> </li>
+                                        <li class='has-sub'><a href='#'><span>NDT Entry</span></a>
+                                            <ul>
+                                                <%--<li class='has-sub'><a href='NDT_ReportNew.aspx'><span>NDT Report</span></a> </li>--%>
+                                                <li class='has-sub'><a href="NDT_ReportTitle.aspx"><span>NDT Report Title</span></a> </li>                                                
+                                                <li class='has-sub'><a href='NDT_ReportNew1.aspx'><span>NDT Report New</span></a> </li>
+                                                <li class='has-sub'><a href="NDT_ReportSummary.aspx"><span>NDT Report Summary</span></a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='DisplayReportULRNo.aspx'><span>List of ULRNO</span></a> </li>
+                                        <li class='has-sub'><a href='#'><span>New Report Entry(App)</span></a>
+                                            <ul>
+                                                <li class='has-sub'><a href='Cube_Report_New.aspx'><span>Cube Report</span></a></li>
+                                                <li class='has-sub'><a href='Steel_ReportNew.aspx'><span>Steel Report</span></a></li>
+                                                <%--<li class='has-sub'><a href='NDT_ReportNew.aspx'><span>NDT Report</span></a> </li>--%>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='ReportDelayReason.aspx'><span>Report Delay Reason</span></a>
+                                        </li>
+                                        <li class='has-sub'><a href='ReportDelayList.aspx'><span>Delay Report List</span></a>
+                                        </li>                                        
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Queries</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='MISDetail.aspx'><span>MIS</span></a></li>
+                                        <li class='has-sub'><a href='BusinessDetail.aspx'><span>Business Detail</span></a></li>
+                                        <li class='has-sub'><a href='RouteWiseDetails.aspx'><span>Business-RouteWise</span></a></li>
+                                        <li class='has-sub'><a href='ClientSiteChange.aspx'><span>Change Client/Site</span></a></li>
+                                        <li class='has-sub'><a href='DisposeOffMaterial.aspx'><span>Disposal Off Material</span></a></li>
+                                        <li class='has-sub'><a href='BusinessReport.aspx'><span>Business Report</span></a></li>
+                                        <li class='has-sub'><a href='Cube28DaysTestingDue.aspx'><span>28 Days Testing Due List</span></a></li>
+                                        <li class='has-sub'><a href='BillWiseReportDetails.aspx'><span>Bill Wise Report Status 1</span></a></li>
+                                        <li class='has-sub'><a href='BillWiseReportStatus.aspx'><span>Bill Wise Report Status 2</span></a></li>
+                                        <li class='has-sub'><a href='Client_ListBusinessWise.aspx'><span>List of Client - Lost</span></a></li>
+                                        <li class='has-sub'><a href='ReportMixDesign.aspx'><span>Mix Design - Report</span></a></li>
+                                        <li class='has-sub'><a href='ClientMonthlyAddedReport.aspx'><span>Monthly Client List</span></a></li>
+                                        <li class='has-sub'><a href='Other_ReportSection.aspx'><span>OT-Rpt Section Update</span></a></li>
+                                        <%--<li class='has-sub'><a href='ReportMailStatus.aspx'><span>Report Mail Status</span></a></li>--%>
+                                    </ul>
+                                </li>
+                                <li class='active has-sub'><a href='#'><span>Dashboard</span></a>
+                                    <ul>
+                                        <li class='has-sub'><a href='ReportMarketVisitStatus.aspx'><span>Market Visit Status</span></a></li>
+                                        <li class='has-sub'><a href='ReportEnquiryStatus.aspx'><span>Enquiry Status</span></a></li>
+                                        <li class='has-sub'><a href='ReportLogisticsStatus.aspx'><span>Logistics Status</span></a></li>
+                                        <li class='has-sub'><a href='ReportSalesStatus.aspx'><span>Sales Status</span></a></li>
+                                        <li class='has-sub'><a href='ReportBusinessSnapshot.aspx'><span>Business Snapshot</span></a></li>
+                                        <li class='has-sub'><a href='ReportSiteVisitLog.aspx'><span>Site Visit Log - Device</span></a></li>
+                                        <li class='has-sub'><a href='ReportSalesApp.aspx'><span>Sales App Report</span></a></li>
+                                        <%-- <li class='has-sub'><a href='CategorywiseSale.aspx'><span>Categorywise Sale</span></a></li>--%>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div style="float: left; width: 580px">
+                <left>&nbsp;
+                      <asp:Label ID="lblheading"  runat="server"  Text="Label" Font-Bold="True" Font-Names="Verdana" 
+                       Font-Size="Small" ForeColor="#000099"></asp:Label>
+                  </left>
+            </div>
+            <%--<asp:Label ID="Label2" runat="server" Text="|" Font-Bold="true" ForeColor="Blue"></asp:Label>--%>
+            <%--<asp:Label ID="Label1" runat="server" Text="" Font-Bold="true" ForeColor="Blue"></asp:Label>--%>
+        &nbsp;
+        <%--<asp:Label ID="lbl_Back" runat="server" Text="" Visible="false"></asp:Label>--%>
+            <asp:Label ID="lblMsg" runat="server" Font-Bold="true" ForeColor="Red"></asp:Label>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="width: auto">
+                <footer> 
+             <center style="width:770px" >
+            </center>
+           </footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

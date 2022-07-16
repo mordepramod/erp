@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2018-11-26T12:50:45.0000000+05:30</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\140722\pune</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AAC_Inward.aspx">
+      <publishTime>11/16/2021 13:02:28</publishTime>
+    </File>
+    <File Include="AAC_Report_CS.aspx">
+      <publishTime>10/26/2021 12:01:10</publishTime>
+    </File>
+    <File Include="AAC_Report_DM.aspx">
+      <publishTime>10/26/2021 12:02:33</publishTime>
+    </File>
+    <File Include="AAC_Report_DS.aspx">
+      <publishTime>10/26/2021 12:02:29</publishTime>
+    </File>
+    <File Include="AAC_Report_SN.aspx">
+      <publishTime>10/26/2021 12:02:29</publishTime>
+    </File>
+    <File Include="AdvanceJournalEntry.aspx">
+      <publishTime>07/26/2017 15:49:39</publishTime>
+    </File>
+    <File Include="AdvanceReciptEntry.aspx">
+      <publishTime>10/24/2019 17:12:38</publishTime>
+    </File>
+    <File Include="Advance_Modify.aspx">
+      <publishTime>09/04/2018 18:25:03</publishTime>
+    </File>
+    <File Include="Aggregate_Inward.aspx">
+      <publishTime>04/03/2020 06:21:40</publishTime>
+    </File>
+    <File Include="Aggregate_Report.aspx">
+      <publishTime>09/24/2020 17:50:48</publishTime>
+    </File>
+    <File Include="AlertMapping.aspx">
+      <publishTime>09/11/2018 11:37:02</publishTime>
+    </File>
+    <File Include="AppCollectionReport.aspx">
+      <publishTime>11/27/2018 14:28:37</publishTime>
+    </File>
+    <File Include="ApproveReport.aspx">
+      <publishTime>03/27/2021 18:04:50</publishTime>
+    </File>
+    <File Include="App_Themes/duro/duro.skin">
+      <publishTime>04/06/2021 16:30:10</publishTime>
+    </File>
+    <File Include="App_Themes/duro/jquery-1.7.1.js">
+      <publishTime>04/03/2017 18:32:20</publishTime>
+    </File>
+    <File Include="App_Themes/duro/styles.css">
+      <publishTime>06/27/2020 18:10:29</publishTime>
+    </File>
+    <File Include="App_Themes/Styles1.css">
+      <publishTime>01/11/2019 11:59:58</publishTime>
+    </File>
+    <File Include="BackupData.aspx">
+      <publishTime>07/14/2016 17:10:12</publishTime>
+    </File>
+    <File Include="BadDebt.aspx">
+      <publishTime>06/22/2018 12:53:44</publishTime>
+    </File>
+    <File Include="BalanceTransfer.aspx">
+      <publishTime>04/04/2017 15:28:59</publishTime>
+    </File>
+    <File Include="Bank.aspx">
+      <publishTime>01/28/2016 16:48:21</publishTime>
+    </File>
+    <File Include="Bill.aspx">
+      <publishTime>06/12/2022 22:39:57</publishTime>
+    </File>
+    <File Include="BillBooking.aspx">
+      <publishTime>02/15/2020 14:46:23</publishTime>
+    </File>
+    <File Include="BillBooking_Modify.aspx">
+      <publishTime>02/15/2020 14:59:58</publishTime>
+    </File>
+    <File Include="BillBooking_Report.aspx">
+      <publishTime>12/21/2019 10:40:38</publishTime>
+    </File>
+    <File Include="BillGenerationForApprovedRpt.aspx">
+      <publishTime>04/25/2018 18:38:26</publishTime>
+    </File>
+    <File Include="BillMonthly.aspx">
+      <publishTime>03/25/2021 16:39:40</publishTime>
+    </File>
+    <File Include="BillOutward.aspx">
+      <publishTime>03/04/2019 14:40:19</publishTime>
+    </File>
+    <File Include="BillPendingReportList.aspx">
+      <publishTime>08/27/2018 18:19:31</publishTime>
+    </File>
+    <File Include="BillPrevious.aspx">
+      <publishTime>05/04/2017 14:57:59</publishTime>
+    </File>
+    <File Include="BillStatus.aspx">
+      <publishTime>04/07/2021 12:04:51</publishTime>
+    </File>
+    <File Include="BillStatusUser.aspx">
+      <publishTime>12/23/2020 17:14:01</publishTime>
+    </File>
+    <File Include="BillWiseReportDetails.aspx">
+      <publishTime>07/15/2017 17:20:38</publishTime>
+    </File>
+    <File Include="BillWiseReportStatus.aspx">
+      <publishTime>02/14/2018 11:14:23</publishTime>
+    </File>
+    <File Include="BillWithoutInward.aspx">
+      <publishTime>05/14/2022 16:58:52</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/12/2010 11:10:28</publishTime>
+    </File>
+    <File Include="bin/DESPLWEB.dll">
+      <publishTime>07/14/2022 19:45:02</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.Reduced.dll">
+      <publishTime>08/07/2011 07:31:57</publishTime>
+    </File>
+    <File Include="bin/itextsharp.DLL">
+      <publishTime>12/08/2014 12:24:02</publishTime>
+    </File>
+    <File Include="bin/TimePicker.dll">
+      <publishTime>05/24/2010 14:37:16</publishTime>
+    </File>
+    <File Include="Brick_Inward.aspx">
+      <publishTime>04/03/2020 06:21:56</publishTime>
+    </File>
+    <File Include="Brick_Report.aspx">
+      <publishTime>08/13/2020 15:25:41</publishTime>
+    </File>
+    <File Include="BusinessDetail.aspx">
+      <publishTime>09/06/2018 17:00:16</publishTime>
+    </File>
+    <File Include="BusinessReport.aspx">
+      <publishTime>06/29/2021 10:10:07</publishTime>
+    </File>
+    <File Include="CashBook.aspx">
+      <publishTime>06/18/2019 15:08:21</publishTime>
+    </File>
+    <File Include="CashPayment.aspx">
+      <publishTime>01/14/2021 12:53:37</publishTime>
+    </File>
+    <File Include="CashPayment_Modify.aspx">
+      <publishTime>12/18/2020 00:10:42</publishTime>
+    </File>
+    <File Include="CashReceipt_Entry.aspx">
+      <publishTime>12/13/2017 17:38:45</publishTime>
+    </File>
+    <File Include="CashReceipt_Modify.aspx">
+      <publishTime>09/04/2018 17:00:03</publishTime>
+    </File>
+    <File Include="CategorywiseSale.aspx">
+      <publishTime>12/17/2018 12:58:47</publishTime>
+    </File>
+    <File Include="CementChemical_Inward.aspx">
+      <publishTime>04/03/2020 06:22:48</publishTime>
+    </File>
+    <File Include="CementChemical_Report.aspx">
+      <publishTime>12/07/2021 10:31:12</publishTime>
+    </File>
+    <File Include="Cement_Inward.aspx">
+      <publishTime>04/03/2020 06:22:18</publishTime>
+    </File>
+    <File Include="Cement_Report.aspx">
+      <publishTime>12/23/2021 18:53:26</publishTime>
+    </File>
+    <File Include="Client.aspx">
+      <publishTime>03/02/2020 17:05:34</publishTime>
+    </File>
+    <File Include="ClientAssignment.aspx">
+      <publishTime>04/30/2016 11:02:34</publishTime>
+    </File>
+    <File Include="ClientBalanceUpdate.aspx">
+      <publishTime>05/20/2017 12:27:14</publishTime>
+    </File>
+    <File Include="ClientBillApproval.aspx">
+      <publishTime>06/14/2020 20:14:02</publishTime>
+    </File>
+    <File Include="ClientCRLimit.aspx">
+      <publishTime>03/13/2021 11:23:43</publishTime>
+    </File>
+    <File Include="ClientCRLimit_new.aspx">
+      <publishTime>07/20/2021 16:28:57</publishTime>
+    </File>
+    <File Include="ClientEnquiry.aspx">
+      <publishTime>02/06/2019 15:48:45</publishTime>
+    </File>
+    <File Include="ClientHome.aspx">
+      <publishTime>06/24/2022 16:58:02</publishTime>
+    </File>
+    <File Include="ClientHomeMetro.aspx">
+      <publishTime>04/06/2021 16:20:28</publishTime>
+    </File>
+    <File Include="ClientLedgerMapping.aspx">
+      <publishTime>04/03/2018 18:28:20</publishTime>
+    </File>
+    <File Include="ClientList.aspx">
+      <publishTime>01/18/2019 10:39:46</publishTime>
+    </File>
+    <File Include="ClientMonthlyAddedReport.aspx">
+      <publishTime>01/30/2020 17:37:25</publishTime>
+    </File>
+    <File Include="ClientMOUUpload.aspx">
+      <publishTime>06/14/2020 19:11:40</publishTime>
+    </File>
+    <File Include="ClientNameUpdate.aspx">
+      <publishTime>02/11/2019 11:33:35</publishTime>
+    </File>
+    <File Include="ClientRecoveryUser.aspx">
+      <publishTime>01/09/2020 11:43:08</publishTime>
+    </File>
+    <File Include="ClientRegistration.aspx">
+      <publishTime>05/31/2021 12:15:40</publishTime>
+    </File>
+    <File Include="ClientSiteChange.aspx">
+      <publishTime>03/12/2019 18:02:31</publishTime>
+    </File>
+    <File Include="ClientSiteStatus.aspx">
+      <publishTime>07/13/2017 14:17:44</publishTime>
+    </File>
+    <File Include="ClientVerify.aspx">
+      <publishTime>02/11/2019 11:33:52</publishTime>
+    </File>
+    <File Include="Client_ListBusinessWise.aspx">
+      <publishTime>01/04/2019 13:51:35</publishTime>
+    </File>
+    <File Include="CollectionReport.aspx">
+      <publishTime>05/21/2019 18:01:36</publishTime>
+    </File>
+    <File Include="ComplaintList.aspx">
+      <publishTime>12/29/2017 16:03:17</publishTime>
+    </File>
+    <File Include="ComplaintRegister.aspx">
+      <publishTime>12/29/2017 16:53:26</publishTime>
+    </File>
+    <File Include="Controls/UC_InwardFooter.ascx">
+      <publishTime>03/27/2015 15:31:45</publishTime>
+    </File>
+    <File Include="Controls/UC_InwardHeader.ascx">
+      <publishTime>06/13/2020 16:42:22</publishTime>
+    </File>
+    <File Include="CoreCutting_Inward.aspx">
+      <publishTime>04/02/2020 20:34:11</publishTime>
+    </File>
+    <File Include="Core_Inward.aspx">
+      <publishTime>04/03/2020 06:23:06</publishTime>
+    </File>
+    <File Include="Core_Report.aspx">
+      <publishTime>03/20/2020 12:35:57</publishTime>
+    </File>
+    <File Include="CouponStatus.aspx">
+      <publishTime>06/12/2022 22:39:57</publishTime>
+    </File>
+    <File Include="Cube28DaysTestingDue.aspx">
+      <publishTime>02/05/2019 14:59:23</publishTime>
+    </File>
+    <File Include="CubeCompStrength.aspx">
+      <publishTime>12/10/2021 15:33:44</publishTime>
+    </File>
+    <File Include="Cube_Inward.aspx">
+      <publishTime>03/24/2021 11:27:38</publishTime>
+    </File>
+    <File Include="Cube_Report.aspx">
+      <publishTime>06/11/2022 17:21:07</publishTime>
+    </File>
+    <File Include="Cube_Report_New.aspx">
+      <publishTime>08/06/2020 11:58:40</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>03/28/2022 10:44:19</publishTime>
+    </File>
+    <File Include="DeviceOrder.aspx">
+      <publishTime>02/16/2019 12:17:40</publishTime>
+    </File>
+    <File Include="DiscountList.aspx">
+      <publishTime>01/16/2018 16:30:30</publishTime>
+    </File>
+    <File Include="DiscountSetting.aspx">
+      <publishTime>08/23/2017 17:27:15</publishTime>
+    </File>
+    <File Include="DispatchSheetMEWise.aspx">
+      <publishTime>12/04/2017 15:53:18</publishTime>
+    </File>
+    <File Include="DisplayReport.aspx">
+      <publishTime>02/06/2021 18:34:57</publishTime>
+    </File>
+    <File Include="DisplayReportULRNo.aspx">
+      <publishTime>10/05/2018 11:45:46</publishTime>
+    </File>
+    <File Include="DisposeOffMaterial.aspx">
+      <publishTime>12/14/2017 14:32:31</publishTime>
+    </File>
+    <File Include="DriverEnquiryAllocation.aspx">
+      <publishTime>02/22/2019 12:15:16</publishTime>
+    </File>
+    <File Include="DuplicateReport.aspx">
+      <publishTime>04/25/2017 14:55:25</publishTime>
+    </File>
+    <File Include="Enquiry.aspx">
+      <publishTime>04/17/2018 16:30:42</publishTime>
+    </File>
+    <File Include="EnquiryApproval.aspx">
+      <publishTime>04/04/2017 16:52:10</publishTime>
+    </File>
+    <File Include="EnquiryClose.aspx">
+      <publishTime>04/04/2017 16:05:33</publishTime>
+    </File>
+    <File Include="EnquiryPendingForME.aspx">
+      <publishTime>01/30/2020 17:47:17</publishTime>
+    </File>
+    <File Include="EnquiryProposal.aspx">
+      <publishTime>06/12/2022 21:36:21</publishTime>
+    </File>
+    <File Include="EnquiryProposalSitewise.aspx">
+      <publishTime>08/05/2020 06:55:56</publishTime>
+    </File>
+    <File Include="EnquirySiteWise.aspx">
+      <publishTime>05/16/2016 16:49:39</publishTime>
+    </File>
+    <File Include="EnquiryVerifyClient.aspx">
+      <publishTime>01/17/2019 14:35:13</publishTime>
+    </File>
+    <File Include="Enquiry_List.aspx">
+      <publishTime>04/04/2017 16:00:23</publishTime>
+    </File>
+    <File Include="Enquiry_Status.aspx">
+      <publishTime>03/11/2022 17:33:25</publishTime>
+    </File>
+    <File Include="EquipmentReg.aspx">
+      <publishTime>01/10/2018 15:08:09</publishTime>
+    </File>
+    <File Include="Flyash_Inward.aspx">
+      <publishTime>04/03/2020 06:26:26</publishTime>
+    </File>
+    <File Include="Flyash_Report.aspx">
+      <publishTime>12/23/2021 18:53:30</publishTime>
+    </File>
+    <File Include="FollowUp.aspx">
+      <publishTime>07/04/2018 10:43:29</publishTime>
+    </File>
+    <File Include="GeneralSettings.aspx">
+      <publishTime>08/13/2020 18:25:08</publishTime>
+    </File>
+    <File Include="GgbsChemical_Inward.aspx">
+      <publishTime>12/14/2021 11:18:57</publishTime>
+    </File>
+    <File Include="GgbsChemical_Report.aspx">
+      <publishTime>12/27/2021 12:50:54</publishTime>
+    </File>
+    <File Include="Ggbs_Inward.aspx">
+      <publishTime>12/27/2021 12:11:00</publishTime>
+    </File>
+    <File Include="Ggbs_Report.aspx">
+      <publishTime>12/24/2021 19:27:44</publishTime>
+    </File>
+    <File Include="GST.aspx">
+      <publishTime>06/30/2017 17:24:09</publishTime>
+    </File>
+    <File Include="GTSamplesDetails.aspx">
+      <publishTime>05/06/2015 16:47:55</publishTime>
+    </File>
+    <File Include="GTSummary.aspx">
+      <publishTime>08/04/2015 10:10:55</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>09/22/2020 11:29:13</publishTime>
+    </File>
+    <File Include="Images/03.png">
+      <publishTime>08/30/2013 16:35:56</publishTime>
+    </File>
+    <File Include="Images/9mLae5p.png">
+      <publishTime>06/24/2013 11:33:10</publishTime>
+    </File>
+    <File Include="Images/AddNewitem.jpg">
+      <publishTime>06/24/2013 11:33:10</publishTime>
+    </File>
+    <File Include="Images/Aggregate.jpg">
+      <publishTime>06/24/2013 11:33:10</publishTime>
+    </File>
+    <File Include="Images/Bricks.jpg">
+      <publishTime>06/24/2013 11:33:10</publishTime>
+    </File>
+    <File Include="Images/browsers.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Cancel.png">
+      <publishTime>08/20/2013 15:19:56</publishTime>
+    </File>
+    <File Include="Images/Cement.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/CEMTC.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/checked.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/construction.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/construction_site.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Core.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/CQRAlogo.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/CQRAlogoBig.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/cross_icon.png">
+      <publishTime>03/24/2009 15:55:52</publishTime>
+    </File>
+    <File Include="Images/Cube.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/delete.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/DeleteItem.png">
+      <publishTime>09/23/2013 12:31:46</publishTime>
+    </File>
+    <File Include="Images/drop.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Duro.png">
+      <publishTime>07/03/2015 17:43:26</publishTime>
+    </File>
+    <File Include="Images/DurocreteKYCDetailsSheet_Mumbai.xls">
+      <publishTime>08/03/2021 12:27:42</publishTime>
+    </File>
+    <File Include="Images/DurocreteKYCDetailsSheet_Nashik.xls">
+      <publishTime>08/03/2021 12:28:45</publishTime>
+    </File>
+    <File Include="Images/DurocreteKYCDetailsSheet_Pune.xls">
+      <publishTime>08/03/2021 12:24:58</publishTime>
+    </File>
+    <File Include="Images/DuroLogo.bmp">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/DuroLogoBig.bmp">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Edit.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/error.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/FlyAsh.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/GT.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Home.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Home3d.jpg">
+      <publishTime>10/26/2013 15:50:00</publishTime>
+    </File>
+    <File Include="Images/Login.jpg">
+      <publishTime>07/27/2013 16:38:00</publishTime>
+    </File>
+    <File Include="Images/Login1.png">
+      <publishTime>07/27/2013 16:42:18</publishTime>
+    </File>
+    <File Include="Images/loginArrow.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/loginbuttonbg.png">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/LogoLine.bmp">
+      <publishTime>08/17/2013 14:23:23</publishTime>
+    </File>
+    <File Include="Images/m5.jpg">
+      <publishTime>02/27/2015 10:10:32</publishTime>
+    </File>
+    <File Include="Images/mahametro-logo.png">
+      <publishTime>03/27/2021 10:07:36</publishTime>
+    </File>
+    <File Include="Images/metro-1.jpg">
+      <publishTime>03/27/2021 10:07:55</publishTime>
+    </File>
+    <File Include="Images/nablLogoMumbai.png">
+      <publishTime>10/09/2017 14:20:41</publishTime>
+    </File>
+    <File Include="Images/nablLogoNashik.png">
+      <publishTime>03/18/2020 16:53:12</publishTime>
+    </File>
+    <File Include="Images/nablLogoPune.png">
+      <publishTime>05/29/2019 17:18:33</publishTime>
+    </File>
+    <File Include="Images/NDT.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Ok.jpeg">
+      <publishTime>05/27/2014 14:02:02</publishTime>
+    </File>
+    <File Include="Images/orngLine.bmp">
+      <publishTime>08/19/2013 16:24:39</publishTime>
+    </File>
+    <File Include="Images/Other.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Pavement.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Pile.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/ProgressImage.gif">
+      <publishTime>01/18/2016 12:22:06</publishTime>
+    </File>
+    <File Include="Images/Save.png">
+      <publishTime>08/20/2013 15:19:56</publishTime>
+    </File>
+    <File Include="Images/save2.png">
+      <publishTime>07/30/2013 16:18:32</publishTime>
+    </File>
+    <File Include="Images/Search-32.png">
+      <publishTime>10/06/2012 11:59:46</publishTime>
+    </File>
+    <File Include="Images/search.png">
+      <publishTime>06/27/2013 18:00:06</publishTime>
+    </File>
+    <File Include="Images/Soil.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Solid.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/STC.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/Steel.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="Images/T.jpeg">
+      <publishTime>08/01/2014 16:02:14</publishTime>
+    </File>
+    <File Include="Images/testLogoMum.png">
+      <publishTime>07/08/2022 16:04:06</publishTime>
+    </File>
+    <File Include="Images/testLogoMumNABL.png">
+      <publishTime>07/08/2022 16:04:06</publishTime>
+    </File>
+    <File Include="Images/testLogoNashik.png">
+      <publishTime>05/17/2021 09:26:58</publishTime>
+    </File>
+    <File Include="Images/testLogoNashikNABL.png">
+      <publishTime>05/17/2021 09:26:58</publishTime>
+    </File>
+    <File Include="Images/testLogoPune.png">
+      <publishTime>03/30/2022 10:38:06</publishTime>
+    </File>
+    <File Include="Images/testLogoPuneNABL.png">
+      <publishTime>03/30/2022 10:38:06</publishTime>
+    </File>
+    <File Include="Images/update.png">
+      <publishTime>07/26/2013 16:58:50</publishTime>
+    </File>
+    <File Include="Images/Water.jpg">
+      <publishTime>06/24/2013 11:33:12</publishTime>
+    </File>
+    <File Include="InwardStatus.aspx">
+      <publishTime>12/05/2019 12:11:33</publishTime>
+    </File>
+    <File Include="InwardTestStartedStatus.aspx">
+      <publishTime>10/30/2018 15:04:10</publishTime>
+    </File>
+    <File Include="JournalEntry.aspx">
+      <publishTime>07/18/2017 15:38:15</publishTime>
+    </File>
+    <File Include="LabDB.dbml">
+      <publishTime>07/14/2022 19:43:06</publishTime>
+    </File>
+    <File Include="Ledger.aspx">
+      <publishTime>01/05/2016 18:12:15</publishTime>
+    </File>
+    <File Include="LedgerUpdation.aspx">
+      <publishTime>07/15/2015 16:04:07</publishTime>
+    </File>
+    <File Include="Location.aspx">
+      <publishTime>01/17/2019 17:22:53</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>02/11/2019 11:33:53</publishTime>
+    </File>
+    <File Include="MaterialCollection.aspx">
+      <publishTime>12/08/2021 17:56:30</publishTime>
+    </File>
+    <File Include="MDLetter.aspx">
+      <publishTime>05/07/2018 17:56:08</publishTime>
+    </File>
+    <File Include="MFMaterialUpdation.aspx">
+      <publishTime>07/04/2020 16:21:17</publishTime>
+    </File>
+    <File Include="MFStatus.aspx">
+      <publishTime>04/23/2018 11:38:51</publishTime>
+    </File>
+    <File Include="MISDetail.aspx">
+      <publishTime>01/03/2018 11:40:32</publishTime>
+    </File>
+    <File Include="MistakeRegister.aspx">
+      <publishTime>01/30/2018 11:55:14</publishTime>
+    </File>
+    <File Include="MixDesignLetter.aspx">
+      <publishTime>11/20/2020 12:28:49</publishTime>
+    </File>
+    <File Include="MixDesignSystem.aspx">
+      <publishTime>07/09/2018 14:34:45</publishTime>
+    </File>
+    <File Include="MixDesign_Inward.aspx">
+      <publishTime>07/04/2020 12:38:28</publishTime>
+    </File>
+    <File Include="ModifyJournal.aspx">
+      <publishTime>10/02/2018 15:52:48</publishTime>
+    </File>
+    <File Include="MoistCorrection.aspx">
+      <publishTime>07/15/2015 16:19:18</publishTime>
+    </File>
+    <File Include="MonthlyBilling.aspx">
+      <publishTime>11/19/2018 15:26:10</publishTime>
+    </File>
+    <File Include="MonthlyBilling_Old.aspx">
+      <publishTime>08/19/2017 17:58:07</publishTime>
+    </File>
+    <File Include="MstPg_Veena.Master">
+      <publishTime>03/25/2022 18:02:11</publishTime>
+    </File>
+    <File Include="NDTAppEnquiryAllocation.aspx">
+      <publishTime>03/13/2020 13:05:30</publishTime>
+    </File>
+    <File Include="NDT_Inward.aspx">
+      <publishTime>04/03/2020 06:27:09</publishTime>
+    </File>
+    <File Include="NDT_Report.aspx">
+      <publishTime>02/08/2021 10:28:23</publishTime>
+    </File>
+    <File Include="NDT_ReportNew.aspx">
+      <publishTime>01/19/2021 16:44:40</publishTime>
+    </File>
+    <File Include="NDT_ReportNew1.aspx">
+      <publishTime>10/20/2021 12:46:00</publishTime>
+    </File>
+    <File Include="NDT_ReportSummary.aspx">
+      <publishTime>11/19/2021 18:26:14</publishTime>
+    </File>
+    <File Include="NDT_ReportTitle.aspx">
+      <publishTime>10/13/2021 17:42:26</publishTime>
+    </File>
+    <File Include="NewSite.master">
+      <publishTime>03/27/2021 17:41:30</publishTime>
+    </File>
+    <File Include="Other_Inward.aspx">
+      <publishTime>10/29/2021 16:31:23</publishTime>
+    </File>
+    <File Include="Other_Report.aspx">
+      <publishTime>05/17/2021 20:38:06</publishTime>
+    </File>
+    <File Include="Other_ReportSection.aspx">
+      <publishTime>10/26/2020 12:26:17</publishTime>
+    </File>
+    <File Include="OutstandingAging.aspx">
+      <publishTime>08/14/2019 12:45:48</publishTime>
+    </File>
+    <File Include="OutstandingList.aspx">
+      <publishTime>02/10/2020 12:50:17</publishTime>
+    </File>
+    <File Include="OutstandingRecoveryReport.aspx">
+      <publishTime>08/14/2018 14:19:44</publishTime>
+    </File>
+    <File Include="OutstandingReport.aspx">
+      <publishTime>02/15/2020 16:52:26</publishTime>
+    </File>
+    <File Include="OutwardReport.aspx">
+      <publishTime>04/03/2020 06:28:47</publishTime>
+    </File>
+    <File Include="Pavement_Inward.aspx">
+      <publishTime>04/03/2020 06:28:04</publishTime>
+    </File>
+    <File Include="Pavment_Report_CS.aspx">
+      <publishTime>11/30/2021 12:46:11</publishTime>
+    </File>
+    <File Include="Pavment_Report_FS.aspx">
+      <publishTime>12/06/2021 17:15:05</publishTime>
+    </File>
+    <File Include="Pavment_Report_TS.aspx">
+      <publishTime>10/25/2021 18:16:33</publishTime>
+    </File>
+    <File Include="Pavment_Report_WA.aspx">
+      <publishTime>10/25/2021 18:17:24</publishTime>
+    </File>
+    <File Include="Pile_Inward.aspx">
+      <publishTime>04/03/2020 06:28:26</publishTime>
+    </File>
+    <File Include="Pile_Report.aspx">
+      <publishTime>03/20/2020 12:47:56</publishTime>
+    </File>
+    <File Include="POUpload.aspx">
+      <publishTime>06/10/2020 09:56:25</publishTime>
+    </File>
+    <File Include="PreviousBill.aspx">
+      <publishTime>05/27/2016 18:28:02</publishTime>
+    </File>
+    <File Include="PrintReport.aspx">
+      <publishTime>05/13/2021 17:21:32</publishTime>
+    </File>
+    <File Include="ProformaInvoice.aspx">
+      <publishTime>07/06/2017 13:02:57</publishTime>
+    </File>
+    <File Include="ProformaInvoiceStatus.aspx">
+      <publishTime>06/20/2020 17:53:35</publishTime>
+    </File>
+    <File Include="Proposal.aspx">
+      <publishTime>08/05/2020 06:56:55</publishTime>
+    </File>
+    <File Include="ProposalList.aspx">
+      <publishTime>06/23/2020 10:52:29</publishTime>
+    </File>
+    <File Include="RecoveryAging.aspx">
+      <publishTime>02/15/2020 12:15:09</publishTime>
+    </File>
+    <File Include="RecoveryUpdation.aspx">
+      <publishTime>02/15/2020 10:24:01</publishTime>
+    </File>
+    <File Include="ReportApproveCRLimit.aspx">
+      <publishTime>06/07/2018 18:15:02</publishTime>
+    </File>
+    <File Include="ReportAuthentication.aspx">
+      <publishTime>05/31/2021 13:09:25</publishTime>
+    </File>
+    <File Include="ReportBusinessSnapshot.aspx">
+      <publishTime>06/10/2018 18:32:47</publishTime>
+    </File>
+    <File Include="ReportDelayList.aspx">
+      <publishTime>02/14/2020 12:49:42</publishTime>
+    </File>
+    <File Include="ReportDelayReason.aspx">
+      <publishTime>01/30/2020 16:21:21</publishTime>
+    </File>
+    <File Include="ReportEnquiryStatus.aspx">
+      <publishTime>03/23/2018 12:29:34</publishTime>
+    </File>
+    <File Include="ReportForClient.aspx">
+      <publishTime>07/15/2017 14:36:30</publishTime>
+    </File>
+    <File Include="ReportLogisticsStatus.aspx">
+      <publishTime>03/23/2018 18:30:16</publishTime>
+    </File>
+    <File Include="ReportMailStatus.aspx">
+      <publishTime>05/19/2021 08:21:57</publishTime>
+    </File>
+    <File Include="ReportMarketVisitStatus.aspx">
+      <publishTime>04/11/2018 12:37:18</publishTime>
+    </File>
+    <File Include="ReportMixDesign.aspx">
+      <publishTime>03/07/2018 18:53:32</publishTime>
+    </File>
+    <File Include="Reports/temp.txt">
+      <publishTime>04/07/2017 15:48:06</publishTime>
+    </File>
+    <File Include="ReportSalesApp.aspx">
+      <publishTime>10/08/2018 14:21:35</publishTime>
+    </File>
+    <File Include="ReportSalesStatus.aspx">
+      <publishTime>06/11/2018 10:10:54</publishTime>
+    </File>
+    <File Include="ReportSiteVisitLog.aspx">
+      <publishTime>08/01/2018 15:38:52</publishTime>
+    </File>
+    <File Include="ReportStatus.aspx">
+      <publishTime>05/19/2021 18:26:17</publishTime>
+    </File>
+    <File Include="Route.aspx">
+      <publishTime>11/03/2017 12:07:40</publishTime>
+    </File>
+    <File Include="RouteDriverAllocation.aspx">
+      <publishTime>01/16/2019 16:12:28</publishTime>
+    </File>
+    <File Include="RouteMEAllocation.aspx">
+      <publishTime>10/25/2017 11:37:57</publishTime>
+    </File>
+    <File Include="RouteUpdate.aspx">
+      <publishTime>11/20/2017 11:39:51</publishTime>
+    </File>
+    <File Include="RouteWiseDetails.aspx">
+      <publishTime>12/13/2017 11:52:05</publishTime>
+    </File>
+    <File Include="RWH_Inward.aspx">
+      <publishTime>04/03/2020 06:29:10</publishTime>
+    </File>
+    <File Include="SectionWiseEmail.aspx">
+      <publishTime>08/28/2018 10:12:22</publishTime>
+    </File>
+    <File Include="Site.aspx">
+      <publishTime>02/27/2020 14:01:14</publishTime>
+    </File>
+    <File Include="Site.master">
+      <publishTime>03/27/2021 15:53:25</publishTime>
+    </File>
+    <File Include="SiteAllocation.aspx">
+      <publishTime>11/14/2017 10:21:44</publishTime>
+    </File>
+    <File Include="SiteAssignment.aspx">
+      <publishTime>10/04/2017 11:16:58</publishTime>
+    </File>
+    <File Include="SiteList.aspx">
+      <publishTime>02/14/2018 10:48:16</publishTime>
+    </File>
+    <File Include="SiteVerify.aspx">
+      <publishTime>01/21/2019 14:46:47</publishTime>
+    </File>
+    <File Include="SiteWiseRateList.aspx">
+      <publishTime>12/13/2019 14:22:43</publishTime>
+    </File>
+    <File Include="SoilInvestigation_Inward.aspx">
+      <publishTime>05/14/2022 17:16:38</publishTime>
+    </File>
+    <File Include="Soil_Inward.aspx">
+      <publishTime>04/03/2020 06:29:34</publishTime>
+    </File>
+    <File Include="Soil_Report_CBR.aspx">
+      <publishTime>03/20/2020 12:47:55</publishTime>
+    </File>
+    <File Include="Soil_Report_FDTS.aspx">
+      <publishTime>03/20/2020 12:47:55</publishTime>
+    </File>
+    <File Include="Soil_Report_FSI.aspx">
+      <publishTime>09/14/2020 12:06:32</publishTime>
+    </File>
+    <File Include="Soil_Report_Gradation.aspx">
+      <publishTime>03/20/2020 12:47:55</publishTime>
+    </File>
+    <File Include="Soil_Report_LLPLPI.aspx">
+      <publishTime>08/13/2020 15:24:58</publishTime>
+    </File>
+    <File Include="Soil_Report_MDD.aspx">
+      <publishTime>03/20/2020 12:47:55</publishTime>
+    </File>
+    <File Include="Soil_Report_Sample.aspx">
+      <publishTime>08/12/2019 16:51:36</publishTime>
+    </File>
+    <File Include="Soil_Report_ShrinkageLimit.aspx">
+      <publishTime>08/17/2020 08:44:44</publishTime>
+    </File>
+    <File Include="Soil_Report_SpecificGravity.aspx">
+      <publishTime>08/18/2020 13:03:03</publishTime>
+    </File>
+    <File Include="Solid_Inward.aspx">
+      <publishTime>04/03/2020 06:30:57</publishTime>
+    </File>
+    <File Include="Solid_Report_CS.aspx">
+      <publishTime>12/27/2021 15:21:36</publishTime>
+    </File>
+    <File Include="Solid_Report_WA.aspx">
+      <publishTime>12/27/2021 17:09:55</publishTime>
+    </File>
+    <File Include="STC_Inward.aspx">
+      <publishTime>04/03/2020 06:31:20</publishTime>
+    </File>
+    <File Include="STC_Report.aspx">
+      <publishTime>12/07/2021 10:31:23</publishTime>
+    </File>
+    <File Include="Steel_Inward.aspx">
+      <publishTime>06/12/2022 15:26:13</publishTime>
+    </File>
+    <File Include="Steel_Report.aspx">
+      <publishTime>07/23/2020 13:49:34</publishTime>
+    </File>
+    <File Include="Steel_ReportNew.aspx">
+      <publishTime>01/21/2021 14:28:14</publishTime>
+    </File>
+    <File Include="Supplier.aspx">
+      <publishTime>02/08/2016 11:08:31</publishTime>
+    </File>
+    <File Include="TallyTransfer.aspx">
+      <publishTime>07/02/2021 11:25:57</publishTime>
+    </File>
+    <File Include="TallyTransfer_BillBooking.aspx">
+      <publishTime>01/14/2021 12:46:50</publishTime>
+    </File>
+    <File Include="Test.aspx">
+      <publishTime>03/12/2019 17:07:16</publishTime>
+    </File>
+    <File Include="TestSchdule.aspx">
+      <publishTime>05/31/2022 16:32:02</publishTime>
+    </File>
+    <File Include="TestWiseNablScope.aspx">
+      <publishTime>01/17/2019 15:55:18</publishTime>
+    </File>
+    <File Include="Tile_Inward.aspx">
+      <publishTime>04/03/2020 06:32:54</publishTime>
+    </File>
+    <File Include="Tile_Report.aspx">
+      <publishTime>02/07/2022 11:08:12</publishTime>
+    </File>
+    <File Include="Trial.aspx">
+      <publishTime>10/18/2021 17:47:13</publishTime>
+    </File>
+    <File Include="TrialOtherInfo.aspx">
+      <publishTime>07/02/2016 16:09:48</publishTime>
+    </File>
+    <File Include="UserAccessRight.aspx">
+      <publishTime>06/22/2022 17:05:07</publishTime>
+    </File>
+    <File Include="UserSign.aspx">
+      <publishTime>12/27/2016 12:27:23</publishTime>
+    </File>
+    <File Include="Vehicle.aspx">
+      <publishTime>08/25/2015 16:19:17</publishTime>
+    </File>
+    <File Include="Vendor.aspx">
+      <publishTime>11/21/2019 15:17:41</publishTime>
+    </File>
+    <File Include="VendorCashPayment.aspx">
+      <publishTime>01/12/2021 17:04:54</publishTime>
+    </File>
+    <File Include="Water_Inward.aspx">
+      <publishTime>04/03/2020 06:33:19</publishTime>
+    </File>
+    <File Include="Water_Report.aspx">
+      <publishTime>03/20/2020 12:47:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/14/2022 19:42:17</publishTime>
+    </File>
+    <File Include="WebHome.aspx">
+      <publishTime>05/07/2020 08:54:10</publishTime>
+    </File>
+    <File Include="WebMobileUsers.aspx">
+      <publishTime>05/13/2020 07:11:20</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
