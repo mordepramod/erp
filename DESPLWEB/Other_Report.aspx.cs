@@ -6149,7 +6149,7 @@ namespace DESPLWEB
 
                 dr = dt3.NewRow();
                 dr["lblSrNo"] = dt3.Rows.Count + 1;
-                dr["txt_REMARK"] = "ASTM C876 standard test method for half cell potential of uncoated reinforcing steel in concrete.";
+                dr["txt_REMARK"] = "IS Code 516 Part-5/Sec-2 : 2021 standard test method for half cell potential of uncoated reinforcing steel in concrete.";
                 dr["ddlRefType"] = "Reference";
                 dt3.Rows.Add(dr);
                 dr = dt3.NewRow();
@@ -6369,7 +6369,7 @@ namespace DESPLWEB
                 dt3.Columns.Add(new DataColumn("ddlRefType", typeof(string)));
                 dr = dt3.NewRow();
                 dr["lblSrNo"] = dt3.Rows.Count + 1;
-                dr["txt_REMARK"] = " ASTM C876 standard test method for half cell potential of uncoated reinforcing steel in concrete";
+                dr["txt_REMARK"] = " IS Code 516 Part-5/Sec-2 : 2021 standard test method for half cell potential of uncoated reinforcing steel in concrete.";
                 dr["ddlRefType"] = "Reference";
                 dt3.Rows.Add(dr);
                 dr = dt3.NewRow();
@@ -6398,7 +6398,7 @@ namespace DESPLWEB
                 dt3.Columns.Add(new DataColumn("ddlRefType", typeof(string)));
                 dr = dt3.NewRow();
                 dr["lblSrNo"] = dt3.Rows.Count + 1;
-                dr["txt_REMARK"] = "BS EN 14630-2006 Test Methods- Determination of carbonation depth in hardened concrete by the Phenolphthalein method. ";
+                dr["txt_REMARK"] = "IS 516 Part-5/Sec-3 : 2021 Test Methods- Determination of carbonation depth in hardened concrete by the Phenolphthalein method.";
                 dr["ddlRefType"] = "Reference";
                 dt3.Rows.Add(dr);
                 dr = dt3.NewRow();
@@ -6599,7 +6599,7 @@ namespace DESPLWEB
                 dr = dt3.NewRow();
 
                 dr["lblSrNo"] = dt3.Rows.Count + 1;
-                dr["txt_REMARK"] = " IS 2386 : Part I - 1963 - Methods of test for Aggregates for concrete (Particle size and shape)";
+                dr["txt_REMARK"] = "IS 2386 : Part-I : 1963 (RA 2021) Methods of test for Aggregates for concrete (Particle size and shape)";
                 dr["ddlRefType"] = "Reference";
                 dt3.Rows.Add(dr);
 

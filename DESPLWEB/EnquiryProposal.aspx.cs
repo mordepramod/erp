@@ -1621,7 +1621,7 @@ namespace DESPLWEB
                                 lblSTCoupons.Text = " ST= " + couponsitespec1.Count().ToString();
                                 if (couponsitespec1.Count() == 0)
                                 {
-                                    var coupon1 = dc.Coupon_ViewST("", 0, 0, Convert.ToInt32(Session["CL_ID"]), Convert.ToInt32(Session["SITE_ID"]), 0, DateTime.Now).ToList();
+                                    var coupon1 = dc.Coupon_ViewST("", 0, 0, Convert.ToInt32(Session["CL_ID"]), 0, 0, DateTime.Now).ToList();
                                     lblSTCoupons.Text = " ST= " + coupon1.Count().ToString();
                                 }
                                 couponsitespec1.Clear();

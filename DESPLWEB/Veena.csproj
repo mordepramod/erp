@@ -2062,6 +2062,7 @@
   <ItemGroup>
     <None Include="LabDB.dbml.layout">
       <DependentUpon>LabDB.dbml</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <PropertyGroup>

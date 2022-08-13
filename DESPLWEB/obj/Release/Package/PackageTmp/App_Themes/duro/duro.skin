@@ -1,0 +1,55 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<%--<asp:GridView SkinId="gridviewSkin" runat="server" AutoGenerateColumns="False" BorderWidth="1px" 
+    ForeColor="#333333" GridLines="Both" Width="98%" CellPadding="0" CellSpacing="0">
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />    
+    <FooterStyle BackColor="#CCCC99" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <EmptyDataTemplate>
+        No records to display
+    </EmptyDataTemplate>
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" Height="25px" BorderColor="#333333" BorderWidth="1px"/>
+    <EditRowStyle BackColor="#999999" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>--%>
+
+<asp:GridView SkinId="gridviewSkin" runat="server" AutoGenerateColumns="False" BorderWidth="1px" 
+    ForeColor="#333333" GridLines="Both" Width="98%" CellPadding="0" CellSpacing="0">
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />    
+    <FooterStyle BackColor="#CCCC99" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="left" />
+    <EmptyDataTemplate>
+        No records to display
+    </EmptyDataTemplate>
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" Height="22px" BorderColor="#333333" BorderWidth="1px"/>
+    <EditRowStyle BackColor="#999999" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>
+<asp:GridView SkinId="gridviewSkin1" runat="server" AutoGenerateColumns="False" BorderWidth="1px" 
+    ForeColor="#333333" GridLines="Both" CellPadding="0" CellSpacing="0">
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />    
+    <FooterStyle BackColor="#CCCC99" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="left" />
+    <EmptyDataTemplate>
+        No records to display
+    </EmptyDataTemplate>
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" Height="25px" BorderColor="#333333" BorderWidth="1px"/>
+    <EditRowStyle BackColor="#999999" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>

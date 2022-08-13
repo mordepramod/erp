@@ -1,0 +1,24 @@
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\bin\DESPLWEB.dll.config
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\bin\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\bin\DESPLWEB.pdb
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\obj\Release\Veena.csprojResolveAssemblyReference.cache
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_02-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.pdb
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.dll.config
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.pdb
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\obj\Release\Veena.csprojResolveAssemblyReference.cache
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_23-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.pdb
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.dll.config
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.dll
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\bin\DESPLWEB.pdb
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\obj\Release\Veena.csprojResolveAssemblyReference.cache
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.dll
+D:\Geeta\ERP Live Code\02-08-22\LabERP_23-07-22_Live\DESPLWEB\obj\Release\DESPLWEB.pdb
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\bin\DESPLWEB.dll.config
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\bin\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\bin\DESPLWEB.pdb
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\obj\Release\Veena.csprojResolveAssemblyReference.cache
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\obj\Release\DESPLWEB.dll
+D:\Software\ASPProject\LaboratoryERP\2022\ERP\Pune\LabERP_06-08-22_Live\DESPLWEB\obj\Release\DESPLWEB.pdb

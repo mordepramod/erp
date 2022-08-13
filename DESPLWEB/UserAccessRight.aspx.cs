@@ -36,7 +36,7 @@ namespace DESPLWEB
                     var user = dc.User_View(Convert.ToInt32(Session["LoginId"]), 0, "", "", "");
                     foreach (var u in user)
                     {
-                        if (u.USER_Admin_right_bit == true && u.USER_Name_var.ToLower().Contains("admin") == true)
+                        if (u.USER_Admin_right_bit == true)
                         {
                             userRight = true;
                         }

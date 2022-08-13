@@ -1078,7 +1078,7 @@ namespace DESPLWEB
 
             #region Bill Generation
             bool approveRptFlag = true;
-            bool generateBillFlag = true;
+            bool generateBillFlag = false;
             string BillNo = "0";
             if (DateTime.Now.Day >= 26)
             {

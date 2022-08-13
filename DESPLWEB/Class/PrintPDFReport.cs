@@ -312,14 +312,13 @@ namespace DESPLWEB
             cnStr = dc.Connection.Database.ToLower();
             if (cnStr.ToLower().Contains("mumbai") == true)
             {
-                //cellLogo = new PdfPCell(new Phrase("Plot No. A-387, Road No.28, MIDC, Wagle Estate,,", fontL5));
-                cellLogo = new PdfPCell(new Phrase("Plot No A-387, Road No. 28, MIDC, Wagle Estate", fontL5));
+                cellLogo = new PdfPCell(new Phrase("PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge,", fontL5));
                 cellLogo.HorizontalAlignment = Element.ALIGN_LEFT;
                 cellLogo.Border = PdfPCell.NO_BORDER;
                 tableLogo.AddCell(cellLogo);
 
 
-                cellLogo = new PdfPCell(new Phrase("Thane (W)-400604.", fontL5));
+                cellLogo = new PdfPCell(new Phrase("Turbhe,Navi Mumbai-400705.", fontL5));
                 cellLogo.Border = PdfPCell.NO_BORDER;
                 cellLogo.HorizontalAlignment = Element.ALIGN_LEFT;
                 tableLogo.AddCell(cellLogo);
@@ -11272,7 +11271,7 @@ namespace DESPLWEB
                     }
                     else if (dc.Connection.ConnectionString.ToLower().Contains("veenamumbai"))
                     {
-                        paragraph.Add("Plot No. A-387, Road No.28, MIDC, Wagle Estate, Thane (W)-400604.");
+                        paragraph.Add("PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge, Turbhe,Navi Mumbai-400705.");
                     }
                     else if (dc.Connection.ConnectionString.ToLower().Contains("veenanashik"))
                     {
@@ -44075,7 +44074,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Pt 40 : 1977-RA(2011)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 40 : 1977: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 2;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44130,7 +44129,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Pt 2 : 1973-RA(2010)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 2 : 1973: 2020"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 2;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44200,11 +44199,11 @@ namespace DESPLWEB
                             {
                                 if (soilInword.TEST_Sr_No == 3)
                                 {
-                                    cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 7 : 1980-RA(2011)"), fontH1));
+                                    cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 7 : 1980 : 2021"), fontH1));
                                 }
                                 else
                                 {
-                                    cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 8 : 1983-RA(2010)"), fontH1));
+                                    cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 8 : 1983: 2020"), fontH1));
                                 }
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 2;
@@ -44291,7 +44290,7 @@ namespace DESPLWEB
                             }
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 16 : 1979-RA(2011)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 16 : 1987: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 2;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44373,7 +44372,7 @@ namespace DESPLWEB
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 table1.AddCell(cell1);
 
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 4 : 1985-RA(2010)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 4 : 1985: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 4;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44394,7 +44393,7 @@ namespace DESPLWEB
 
                             if (cobbleFlag == false)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 4 : 1985-RA(2010)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 4 : 1985: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 3;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44504,7 +44503,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 5 : 1985-RA(2010)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 5 : 1985 : 2020"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 3;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44607,7 +44606,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Pt 13 : 1979"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 13 : 1986: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.Rowspan = 2;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
@@ -44854,7 +44853,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 6 : 1972-RA(2001)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 6 : 1972: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
                                 table1.AddCell(cell1);
@@ -44911,7 +44910,7 @@ namespace DESPLWEB
                             table1.AddCell(cell1);
                             if (b == 0)
                             {
-                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 3 Section 1 & 2: 1980-RA(2002)"), fontH1));
+                                cell1 = new PdfPCell(new Phrase(Convert.ToString("IS 2720 : Part 3 : Sec 1 : 1980: 2021"), fontH1));
                                 cell1.HorizontalAlignment = Element.ALIGN_CENTER;
                                 cell1.VerticalAlignment = Element.ALIGN_MIDDLE;
                                 table1.AddCell(cell1);
@@ -44966,19 +44965,19 @@ namespace DESPLWEB
                         {
                             if (item.TEST_Sr_No == 3) //if (item.SOSMPLTEST_TEST_Id == 84)
                             {
-                                iscode = "IS 2720 : Part 7 : 1980-RA(2011) Determination of Water Content-Dry Density Relation Using Light Compaction.";
+                                iscode = "IS 2720 : Part 7 : 1980 : 2021 Determination of Water Content-Dry Density Relation Using Light Compaction.";
                             }
                             else if (item.TEST_Sr_No == 4) //else if (item.SOSMPLTEST_TEST_Id == 85)
                             {
-                                iscode = "IS 2720 : Part 8 : 1983-RA(2010) Determination of Water Content-Dry Density Relation Using Heavy Compaction.";
+                                iscode = "IS 2720 : Part 8 : 1983: 2020 Determination of Water Content-Dry Density Relation Using Heavy Compaction.";
                             }
                             else if (item.TEST_Sr_No == 10) //else if (item.SOSMPLTEST_TEST_Id == 91)
                             {
-                                iscode = "IS 2720 : Part 28 : 1975-RA(2010) Determination of Dry Density of Soils In-place, by the Sand Replacement Method.";
+                                iscode = "IS 2720 : Part 28 : 1974: 2020 Determination of Dry Density of Soils In-place, by the Sand Replacement Method.";
                             }
                             else if (item.TEST_Sr_No == 11) //else if (item.SOSMPLTEST_TEST_Id == 92)
                             {
-                                iscode = "IS 2720 : Part 29 : 1975-RA(2010) Determination of Dry Density of Soils In-place, by the Core-cutter Method.";
+                                iscode = "IS 2720 : Part 29 : 1975: 2020  Determination of Dry Density of Soils In-place, by the Core-cutter Method.";
                             }
                             if (item.TEST_Sr_No == 3 || item.TEST_Sr_No == 4 || item.TEST_Sr_No == 10 || item.TEST_Sr_No == 11) //if (item.SOSMPLTEST_TEST_Id == 84 || item.SOSMPLTEST_TEST_Id == 85 || item.SOSMPLTEST_TEST_Id == 91 || item.SOSMPLTEST_TEST_Id == 92)
                             {

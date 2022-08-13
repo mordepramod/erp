@@ -3528,7 +3528,7 @@ namespace DESPLWEB
             mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=4><b> Durocrete </b></font> </td></tr>";
             if (cnStr.ToLower().Contains("mumbai") == true)
             {
-                mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=3>Engineering Services Pvt. Ltd (Plot No. A-387, Road No.28, MIDC, Wagle Estate, Thane (W)-400604. Tel No: +91-9850500013,022-27622353)</font></td></tr>";
+                mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=3>Engineering Services Pvt. Ltd (PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge,Turbhe,Navi Mumbai. Tel No: +91-9850500013,022-27622353)</font></td></tr>";
             }
             else if (cnStr.ToLower().Contains("nashik") == true)
             {
@@ -3825,7 +3825,7 @@ namespace DESPLWEB
             //mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=4><b> Durocrete </b></font> </td></tr>";
             //if (cnStr.ToLower().Contains("mumbai") == true)
             //{
-            //    mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=3>Engineering Services Pvt. Ltd (Plot No. A-387, Road No.28, MIDC, Wagle Estate,,Turbhe,Navi Mumbai. Tel No: +91-9850500013,022-27622353)</font></td></tr>";
+            //    mySql += "<tr><td width='99%' align=center colspan=7 height=19><font size=3>Engineering Services Pvt. Ltd (PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge,Turbhe,Navi Mumbai. Tel No: +91-9850500013,022-27622353)</font></td></tr>";
             //}
             //else if (cnStr.ToLower().Contains("nashik") == true)
             //{
@@ -11326,8 +11326,8 @@ namespace DESPLWEB
             mySql.Append("<tr><td width= 60%><font size=3 >Durocrete Engineering Services Pvt.Ltd.</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
             if (cnStr.ToLower().Contains("mumbai") == true)
             {
-                mySql.Append("<tr><td width= 60%><font size=1 >Plot No. A-387, Road No.28, MIDC, Wagle Estate,</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
-                mySql.Append("<tr><td width= 60%><font size=1 > Thane (W)-400604.</font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=3>Test with the Best</font></td></tr>".ToString());
+                mySql.Append("<tr><td width= 60%><font size=1 >PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge,</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
+                mySql.Append("<tr><td width= 60%><font size=1 >Turbhe,Navi Mumbai-400705.</font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=3>Test with the Best</font></td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 >Tel No: +91-9850500013,022-27622353</font></td><td width= 10%>&nbsp</td><td width= 30% >&nbsp</td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 >Email: infomumbai@durocrete.acts-int.com</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 ><b> </b></font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=1>Website : www.durocrete.in</font></td></tr>".ToString());
@@ -11712,8 +11712,8 @@ namespace DESPLWEB
             mySql.Append("<tr><td width= 60% colspan=2><font size=3 >Durocrete Engineering Services Pvt.Ltd.</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
             if (cnStr.ToLower().Contains("mumbai") == true)
             {
-                mySql.Append("<tr><td width= 60%><font size=1 >Plot No. A-387, Road No.28, MIDC, Wagle Estate,,</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
-                mySql.Append("<tr><td width= 60%><font size=1 >Thane (W)-400604.</font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=3>Test with the Best</font></td></tr>".ToString());
+                mySql.Append("<tr><td width= 60%><font size=1 >PAP-D122/125,TTC Industrial Area,Behind Jai Mata Di Weighbridge,</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
+                mySql.Append("<tr><td width= 60%><font size=1 >Turbhe,Navi Mumbai-400705.</font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=3>Test with the Best</font></td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 >Tel No: +91-9850500013,022-27622353</font></td><td width= 10%>&nbsp</td><td width= 30% >&nbsp</td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 >Email: infomumbai@durocrete.acts-int.com</font></td><td width= 10%>&nbsp</td><td width= 30%>&nbsp</td></tr>".ToString());
                 mySql.Append("<tr><td width= 60%><font size=1 ><b></b></font></td><td width= 10%>&nbsp</td><td width= 30% align=right><font size=1>Website : www.durocrete.in</font></td></tr>".ToString());

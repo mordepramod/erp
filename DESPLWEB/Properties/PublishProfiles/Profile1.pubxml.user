@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile>2018-11-26T12:50:45.0000000+05:30</TimeStampOfAssociatedLegacyPublishXmlFile>
-    <_PublishTargetUrl>C:\140722\pune</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Administrator\Desktop\PublishVeena\ERP12-08\pune</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="AAC_Inward.aspx">
@@ -118,7 +118,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/12/2010 11:10:28</publishTime>
     </File>
     <File Include="bin/DESPLWEB.dll">
-      <publishTime>07/14/2022 19:45:02</publishTime>
+      <publishTime>08/12/2022 18:08:04</publishTime>
     </File>
     <File Include="bin/Ionic.Zip.Reduced.dll">
       <publishTime>08/07/2011 07:31:57</publishTime>
@@ -550,10 +550,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/01/2014 16:02:14</publishTime>
     </File>
     <File Include="Images/testLogoMum.png">
-      <publishTime>07/08/2022 16:04:06</publishTime>
+      <publishTime>05/17/2021 09:26:58</publishTime>
     </File>
     <File Include="Images/testLogoMumNABL.png">
-      <publishTime>07/08/2022 16:04:06</publishTime>
+      <publishTime>05/17/2021 09:26:58</publishTime>
     </File>
     <File Include="Images/testLogoNashik.png">
       <publishTime>05/17/2021 09:26:58</publishTime>
@@ -583,7 +583,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/18/2017 15:38:15</publishTime>
     </File>
     <File Include="LabDB.dbml">
-      <publishTime>07/14/2022 19:43:06</publishTime>
+      <publishTime>08/12/2022 18:06:35</publishTime>
     </File>
     <File Include="Ledger.aspx">
       <publishTime>01/05/2016 18:12:15</publishTime>
@@ -667,7 +667,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/29/2021 16:31:23</publishTime>
     </File>
     <File Include="Other_Report.aspx">
-      <publishTime>05/17/2021 20:38:06</publishTime>
+      <publishTime>08/12/2022 18:06:35</publishTime>
     </File>
     <File Include="Other_ReportSection.aspx">
       <publishTime>10/26/2020 12:26:17</publishTime>
@@ -904,7 +904,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2020 06:32:54</publishTime>
     </File>
     <File Include="Tile_Report.aspx">
-      <publishTime>02/07/2022 11:08:12</publishTime>
+      <publishTime>08/12/2022 17:04:49</publishTime>
     </File>
     <File Include="Trial.aspx">
       <publishTime>10/18/2021 17:47:13</publishTime>
@@ -934,7 +934,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/20/2020 12:47:54</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/14/2022 19:42:17</publishTime>
+      <publishTime>08/12/2022 18:05:53</publishTime>
     </File>
     <File Include="WebHome.aspx">
       <publishTime>05/07/2020 08:54:10</publishTime>

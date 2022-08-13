@@ -274,7 +274,7 @@ namespace DESPLWEB
                 string RefNo, SetOfRecord;
                 string totalCost = "0";
                 clsData clsObj = new clsData();
-                int SrNo, TestId;
+                int SrNo, TestId, CouponCount;
                 TestId = 0;
                 bool Supplier;
                 DateTime ReceivedDate = DateTime.ParseExact(UC_InwardHeader1.ReceivedDate, "dd/MM/yyyy HH:mm:ss", null);
@@ -314,7 +314,7 @@ namespace DESPLWEB
 
                     //delete coupon no
                     dc.Coupon_UpdateST("", 0, 0, 0, null, 0, null, "", Convert.ToInt32(UC_InwardHeader1.RecordNo), null, false, false);
-
+                    CouponCount = 0;
                     //dc.ClientSupplier_Update(Convert.ToInt32(UC_InwardHeader1.ClientId), 0, Convert.ToInt32(UC_InwardHeader1.RecordNo), UC_InwardHeader1.RecType, null, true);
 
                     //if (lblRptClientId.Text != "" && lblRptClientId.Text != "0")
@@ -371,7 +371,7 @@ namespace DESPLWEB
                                     CouponNo = CouponNo + couponsitespec[c].COUP_Id + ",";
                                     dc.Coupon_UpdateST("", couponsitespec[c].COUP_Id, Convert.ToInt32(UC_InwardHeader1.ClientId), 0, null, 1, DateTime.Now, RefNo, Convert.ToInt32(UC_InwardHeader1.RecordNo), null, false, false);
                                     tempQty++;
-                                    //CouponCount++;
+                                    CouponCount++;
                                 }
                                 else
                                 {
@@ -388,7 +388,7 @@ namespace DESPLWEB
                                         CouponNo = CouponNo + coupon[c].COUP_Id + ",";
                                         dc.Coupon_UpdateST("", coupon[c].COUP_Id, Convert.ToInt32(UC_InwardHeader1.ClientId), 0, null, 1, DateTime.Now, RefNo, Convert.ToInt32(UC_InwardHeader1.RecordNo), null, false, false);
                                         tempQty++;
-                                        //  CouponCount++;
+                                        CouponCount++;
                                     }
                                     else
                                     {
@@ -472,11 +472,14 @@ namespace DESPLWEB
                                 dc.SteelTest_Update(RefNo, TestId, false);
                             }
                         }
-
-
-                        
-
-
+                    }
+                    if (CouponCount > 0)
+                    {
+                        dc.Inward_Update_CouponStatus(Convert.ToInt32(UC_InwardHeader1.RecordNo), "ST", true);
+                    }
+                    else
+                    {
+                        dc.Inward_Update_CouponStatus(Convert.ToInt32(UC_InwardHeader1.RecordNo), "ST", false);
                     }
                     UC_InwardHeader1.TestReqFormNo = "Test Request Form No : " + UC_InwardHeader1.ReferenceNo + "/" + DateTime.ParseExact(UC_InwardHeader1.ReceivedDate, "dd/MM/yyyy HH:mm:ss", null).Year.ToString().Substring(2, 2);
                     //if (UC_InwardHeader1.OtherClient == true)
@@ -486,12 +489,10 @@ namespace DESPLWEB
                     //    {
                     //        dc.Inward_Update_BillNo(Convert.ToInt32(UC_InwardHeader1.RecordNo), UC_InwardHeader1.RecType, UC_InwardHeader1.BillNo);
                     //    }
-                    //}
-
-                    
+                    //}                    
 
                     Label lblMsg = (Label)Master.FindControl("lblMsg");
-                    if (UC_InwardHeader1.OtherClient == false && UC_InwardHeader1.BillNo != "0" && Convert.ToInt32(lblNoOfCoupons.Text) <=0)
+                    if (UC_InwardHeader1.OtherClient == false && UC_InwardHeader1.BillNo != "0" && CouponCount == 0) //Convert.ToInt32(lblNoOfCoupons.Text) <=0)
                     {
                         //bill updation
                         BillUpdation bill = new BillUpdation();
@@ -561,7 +562,7 @@ namespace DESPLWEB
 
                     //sms
 
-                    if (UC_InwardHeader1.InwdStatus != "Edit")
+                    if (UC_InwardHeader1.InwdStatus != "Edit" && CouponCount == 0)
                     {
                         clsObj.sendInwardReportMsg(Convert.ToInt32(UC_InwardHeader1.EnquiryNo), UC_InwardHeader1.EnqDate, UC_InwardHeader1.SiteMonthlyStatus, UC_InwardHeader1.ClCreditLimitExcededStatus, totalCost,"", UC_InwardHeader1.ContactNo.ToString(), "Inward");
                     }
@@ -847,10 +848,47 @@ namespace DESPLWEB
                 }
 
             }
-            if (valid == true && Convert.ToInt32(lblNoOfCoupons.Text ) <=0 )
+            //if (valid == true && Convert.ToInt32(lblNoOfCoupons.Text ) <=0 )
+            //{
+            //    if (UC_InwardHeader1.POFileName == "" && UC_InwardHeader1.OtherClient == false )
+            //    {
+            //        string BillNo = "0";
+            //        if (UC_InwardHeader1.BillNo != "")
+            //            BillNo = UC_InwardHeader1.BillNo;
+            //        if (BillNo == "0")
+            //        {
+            //            var site = dc.Site_View(Convert.ToInt32(UC_InwardHeader1.SiteId), 0, 0, "").ToList();
+            //            foreach (var st in site)
+            //            {
+            //                if (st.SITE_MonthlyBillingStatus_bit != true)
+            //                {
+            //                    valid = false;
+            //                }
+            //            }
+            //            if (valid == false)
+            //            {
+            //                var withoutbill = dc.WithoutBill_View(Convert.ToInt32(UC_InwardHeader1.RecordNo), UC_InwardHeader1.RecType);
+            //                if (withoutbill.Count() > 0)
+            //                {
+            //                    valid = true;
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            valid = false;
+            //        }
+            //        if (valid == false)
+            //        {
+            //            lblMsg.Text = "Please upload PO File";
+            //        }
+            //    }
+            //}
+            if (valid == true)
             {
-                if (UC_InwardHeader1.POFileName == "" && UC_InwardHeader1.OtherClient == false )
+                if (UC_InwardHeader1.POFileName == "" && UC_InwardHeader1.OtherClient == false)
                 {
+                    bool monthlyBilling = true, withoutBill = false;
                     string BillNo = "0";
                     if (UC_InwardHeader1.BillNo != "")
                         BillNo = UC_InwardHeader1.BillNo;
@@ -861,25 +899,75 @@ namespace DESPLWEB
                         {
                             if (st.SITE_MonthlyBillingStatus_bit != true)
                             {
-                                valid = false;
+                                monthlyBilling = false;
                             }
                         }
-                        if (valid == false)
+                        if (monthlyBilling == false)
                         {
                             var withoutbill = dc.WithoutBill_View(Convert.ToInt32(UC_InwardHeader1.RecordNo), UC_InwardHeader1.RecType);
                             if (withoutbill.Count() > 0)
                             {
-                                valid = true;
+                                withoutBill = true;
                             }
                         }
                     }
                     else
                     {
                         valid = false;
+                        monthlyBilling = false;
                     }
-                    if (valid == false)
+                    int CouponCount = 0;
+                    if (valid == true && withoutBill == false)
+                    {
+                        if (Convert.ToInt32(lblNoOfCoupons.Text) > 0)
+                        {
+                            int totQty = 0;
+                            for (int i = 0; i <= grdSteelInward.Rows.Count - 1; i++)
+                            {
+                                TextBox Quantity = (TextBox)grdSteelInward.Rows[i].FindControl("txtQuantity");
+
+                                totQty += Convert.ToInt32(Quantity.Text);
+                                int tempQty = 0;
+                                var couponsitespec = dc.Coupon_View_SitewiseST(Convert.ToInt32(UC_InwardHeader1.ClientId), Convert.ToInt32(UC_InwardHeader1.SiteId), 0, recdDate).ToList();
+                                for (int c = 0; c < couponsitespec.Count; c++)
+                                {
+                                    if (tempQty < Convert.ToInt32(Quantity.Text))
+                                    {
+                                        tempQty++;
+                                        CouponCount++;
+                                    }
+                                    else
+                                    {
+                                        break;
+                                    }
+                                }
+                                if (couponsitespec.Count() == 0)
+                                {
+                                    var coupon = dc.Coupon_ViewST("", 0, 0, Convert.ToInt32(UC_InwardHeader1.ClientId), Convert.ToInt32(UC_InwardHeader1.SiteId), 0, recdDate).ToList();
+                                    for (int c = 0; c < coupon.Count; c++)
+                                    {
+                                        if (tempQty < Convert.ToInt32(Quantity.Text))
+                                        {
+                                            tempQty++;
+                                            CouponCount++;
+                                        }
+                                        else
+                                        {
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            if (UC_InwardHeader1.InwdStatus == "Edit" && CouponCount == 0 && monthlyBilling == false && Convert.ToInt32(lblNoOfCoupons.Text) >= totQty)
+                            {
+                                CouponCount = totQty;
+                            }
+                        }
+                    }
+                    if (CouponCount == 0 && monthlyBilling == false && withoutBill == false)
                     {
                         lblMsg.Text = "Please upload PO File";
+                        valid = false;
                     }
                 }
             }
@@ -1528,7 +1616,7 @@ namespace DESPLWEB
         protected void LoadCouponList()
         {
             int ClientId = 0, SiteId = 0;
-//            lblNoOfCoupons.Text = "0";
+            //            lblNoOfCoupons.Text = "0";
             if (UC_InwardHeader1.EnquiryNo != "")
             {
                 var enquiry = dc.Enquiry_View(Convert.ToInt32(UC_InwardHeader1.EnquiryNo), 1, 0);
@@ -1542,29 +1630,32 @@ namespace DESPLWEB
                 if (couponsitespec.Count() == 0)
                 {
 
-                    var coupon = dc.Coupon_ViewST("", 0, 0, ClientId, SiteId, 0, recdDate).ToList();
+                    var coupon = dc.Coupon_ViewST("", 0, 0, ClientId, 0, 0, recdDate).ToList();
                     lblNoOfCoupons.Text = coupon.Count().ToString();
                 }
             }
-            if (UC_InwardHeader1.RecType != "" && UC_InwardHeader1.RecordNo != "")
+            else
             {
-                var Modify = dc.ModifyInward_View(Convert.ToInt32(UC_InwardHeader1.RecordNo), Convert.ToInt32(UC_InwardHeader1.ReferenceNo), null, UC_InwardHeader1.RecType.ToString(), null, null);
-                foreach (var n in Modify)
+                if (UC_InwardHeader1.RecType != "" && UC_InwardHeader1.RecordNo != "")
                 {
-                    ClientId = Convert.ToInt32(n.INWD_CL_Id);
-                    SiteId = Convert.ToInt32(n.INWD_SITE_Id);
-                }
-                var couponsitespec = dc.Coupon_View_SitewiseST(ClientId, SiteId, 0, recdDate).ToList();
-                lblNoOfCoupons.Text = couponsitespec.Count().ToString();
-                if (couponsitespec.Count() > 0)
-                {
-                    var couponsitespec2 = dc.Coupon_View_SitewiseST(ClientId, SiteId, Convert.ToInt32(UC_InwardHeader1.RecordNo), recdDate).ToList();
-                    lblNoOfCoupons.Text = couponsitespec2.Count().ToString();
-                }
-                else
-                {
-                    var coupon = dc.Coupon_ViewST("", 0, 0, ClientId, SiteId, Convert.ToInt32(UC_InwardHeader1.RecordNo), recdDate).ToList();
-                    lblNoOfCoupons.Text = coupon.Count().ToString();
+                    var Modify = dc.ModifyInward_View(Convert.ToInt32(UC_InwardHeader1.RecordNo), Convert.ToInt32(UC_InwardHeader1.ReferenceNo), null, UC_InwardHeader1.RecType.ToString(), null, null);
+                    foreach (var n in Modify)
+                    {
+                        ClientId = Convert.ToInt32(n.INWD_CL_Id);
+                        SiteId = Convert.ToInt32(n.INWD_SITE_Id);
+                    }
+                    var couponsitespec = dc.Coupon_View_SitewiseST(ClientId, SiteId, 0, recdDate).ToList();
+                    lblNoOfCoupons.Text = couponsitespec.Count().ToString();
+                    if (couponsitespec.Count() > 0)
+                    {
+                        var couponsitespec2 = dc.Coupon_View_SitewiseST(ClientId, SiteId, Convert.ToInt32(UC_InwardHeader1.RecordNo), recdDate).ToList();
+                        lblNoOfCoupons.Text = couponsitespec2.Count().ToString();
+                    }
+                    else
+                    {
+                        var coupon = dc.Coupon_ViewST("", 0, 0, ClientId, SiteId, Convert.ToInt32(UC_InwardHeader1.RecordNo), recdDate).ToList();
+                        lblNoOfCoupons.Text = coupon.Count().ToString();
+                    }
                 }
             }
             if (lblNoOfCoupons.Text == "")
